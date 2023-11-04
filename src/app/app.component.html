@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mythri Hotel Booking</title>
+</head>
+<body>
+  <main>
+    <a [routerLink]="['/']">
+    <header class="brand-header">
+      <div class="brand-logo">
+        <img src="/assets/logo.avif" alt="logo" aria-hidden="true" width="100" height="100">
+      </div>
+      <div class="brand-name">Mythri Hotel Booking</div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+      </div>
+    </header>
+  </a>
+    <nav class="menu-bar">
+      <!-- Menu bar content, such as navigation links -->
+    </nav>
+    <section class="content">
+      <router-outlet></router-outlet>
+      <app-hotel></app-hotel>
+    </section>
+  </main>
+</body>
+</html>

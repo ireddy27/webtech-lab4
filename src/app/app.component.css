@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the header containing logo, brand name, and search box */
+  .brand-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #d4af37;
+  }
+  
+  .brand-logo img {
+    margin-right: 10px;
+  }
+  
+  .brand-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-left: -200px;
+  }
+  
+  /* Style for the search box and button */
+  .search-box {
+    display: flex;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    border: solid 1px var(--primary-color);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  button {
+    padding: 10px;
+    border: solid 1px var(--primary-color);
+    background: var(--primary-color);
+    color: black;
+    border-radius: 8px;
+    margin-left: 8px;
+  }
+  
+  /* Style for the menu bar */
+  .menu-bar {
+    background-color: white ;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Style for the search results */
+  .results {
+    background-color: #d4af37;
+    display: grid;
+    column-gap: 14px;
+    row-gap: 14px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 400px));
+    margin-top: 50px;
+    justify-content: space-around;
+  }
+  
+  /* Media queries for responsive design */
+  @media (min-width: 500px) and (max-width: 768px) {
+    .results {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    input[type="text"] {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 499px) {
+    .results {
+      grid-template-columns: 1fr;
+    }
+  }
+  
